@@ -25,10 +25,10 @@
                 </div>
 
                 <div class="button-box">
-                    <button onclick="somar()">Somar</button>
-                    <button onclick="subtrair()">Subtrair</button>
-                    <button onclick="multiplicar()">Multiplicar</button>
-                    <button onclick="dividir()">Dividir</button>
+                    <button onclick="calculate('somar')">Somar</button>
+                    <button onclick="calculate('subtrair')">Subtrair</button>
+                    <button onclick="calculate('multiplicar')">Multiplicar</button>
+                    <button onclick="calculate('dividir')">Dividir</button>
                 </div>
 
                 <p class="">O resultao é: <span></span></p>
@@ -37,38 +37,6 @@
         </div>
     </section>
 
-    <script>
-        var n1 = document.querySelector('#n1');
-        var n2 = document.querySelector('#n2');
-        var result = document.querySelector('span');
-
-        function somar() {
-            result.innerHTML = parseInt(n1.value) + parseInt(n2.value);
-            window.alert(`A soma entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
-
-            console.log(result)
-        }
-
-        function subtrair() {
-            result.innerHTML = parseInt(n1.value) - parseInt(n2.value);
-            window.alert(`A subtração entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
-
-            console.log(result)
-        }
-
-        function multiplicar() {
-            result.innerHTML = parseInt(n1.value) * parseInt(n2.value);
-            window.alert(`A multiplicação entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
-
-            console.log(result)
-        }
-
-        function dividir() {
-            result.innerHTML = parseInt(n1.value) / parseInt(n2.value);
-            window.alert(`A divisão entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
-
-            console.log(result)
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
