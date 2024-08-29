@@ -1,9 +1,10 @@
-        var n1 = parseInt(document.querySelector('#n1').value);
-        var n2 = parseInt(document.querySelector('#n2').value);
-        var result = document.querySelector('span');
+       
 
         function calculate(operation) {
-            
+            var n1 = parseInt(document.querySelector('#n1').value);
+            var n2 = parseInt(document.querySelector('#n2').value);
+            var result = document.getElementById('result');
+            console.log(n1, n2)
             if (!(n1.value === "") && !(n2.value === "")) {
             
                 switch (operation){
@@ -34,7 +35,7 @@
 
         function somar(n1, n2) {
             result.innerHTML = n1 + n2;
-            window.alert(`A soma entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
+            alert(`A soma entre ${n1} e ${n2} é igual a: ${result.innerHTML}`);
 
             console.log(result);
 
@@ -42,21 +43,21 @@
 
         function subtrair(n1, n2) {
             result.innerHTML = n1 - n2;
-            window.alert(`A subtração entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
+            alert(`A subtração entre ${n1} e ${n2} é igual a: ${result.innerHTML}`);
 
             console.log(result)
         }
 
         function multiplicar(n1, n2) {
             result.innerHTML = n1 * n2;
-            window.alert(`A multiplicação entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
+            alert(`A multiplicação entre ${n1} e ${n2} é igual a: ${result.innerHTML}`);
 
             console.log(result)
         }
 
         function dividir(n1, n2) {
             result.innerHTML = n1 / n2;
-            window.alert(`A divisão entre ${n1.value} e ${n2.value} é igual a: ${result.innerHTML}`);
+            alert(`A divisão entre ${n1} e ${n2} é igual a: ${result.innerHTML}`);
 
             console.log(result)
         }
