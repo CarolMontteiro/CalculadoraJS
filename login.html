@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <section id="login">
+        <form class="box-login">
+            <h1>Login</h1>
+
+            <label for="email">Seu Email</label>
+            <input id="email" type="email" placeholder="e-mail" oninput="validateEmail()" class="required">
+            <label for="password">Sua Senha</label>
+            <input id="password" type="password" placeholder="Senha" oninput="validatePassword()">
+
+            <div class="button-login"><button type="submit" onclick="logar(); return false">Entrar</button></div>
+         </div>
+    </section>
+
+    <script src="script/login.js"></script>
+</body>
+</html>

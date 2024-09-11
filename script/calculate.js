@@ -1,20 +1,14 @@
-       
-       
 
         function calculate(operation) {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
             let result = document.getElementById('result');
 
-            console.log(n1)
-
             if(validate(n1, n2)) {
-                
                 n1 = Number(n1);
                 n2 = Number(n2);
 
                 if (!(n1 === "") && !(n2 === "")) {
-            
                     switch (operation) {
                         case 'somar':
                             somar(n1, n2);
@@ -63,7 +57,4 @@
             let validate1 = !isNaN(parseFloat(value1)) && !isNaN(isFinite(value1));
             let validate2 = !isNaN(parseFloat(value2)) && !isNaN(isFinite(value2));
             return validate1 && validate2;
-
-        }
-
-       
+        }   
